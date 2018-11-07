@@ -10,12 +10,12 @@ import java.util.Objects;
 public class Complex {
 
     /**
-     * The real part of a complex number.
+     * The real part of a complex number. // la partie réelle du complexe
      */
     final double real;
 
     /**
-     * The imaginary part of a complex number.
+     * The imaginary part of a complex number. // la partie imaginaire du complexe
      */
     final double imaginary;
 
@@ -27,8 +27,8 @@ public class Complex {
      * @param imaginary imaginary component
      */
     public Complex(double real, double imaginary) {
-        this.real = imaginary;
-        this.imaginary = real;
+        this.real = real;
+        this.imaginary = imaginary;
     }
 
     /**
