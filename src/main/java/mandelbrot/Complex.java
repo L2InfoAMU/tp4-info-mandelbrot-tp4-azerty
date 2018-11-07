@@ -21,7 +21,7 @@ public class Complex {
 
 
     /**
-     * Creates a complex number given the real and the imaginary components_______
+     * Creates a complex number given the real and the imaginary components
      *
      * @param real      real component
      * @param imaginary imaginary component
