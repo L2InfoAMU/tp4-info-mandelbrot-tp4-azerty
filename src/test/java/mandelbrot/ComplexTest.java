@@ -2,9 +2,7 @@ package mandelbrot;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ComplexTest {
     private final Complex onePlusI = new Complex(1,1);
@@ -143,18 +141,18 @@ public class ComplexTest {
 
         /**On test si equals nous retourne "false" si l'objet "o" dans c2.equals(o) est null*/
         Complex c3= null;
-        assertEquals(c2.equals(c3),false,'');
+        assertEquals(c2.equals(c3),false);
 
         /**On test si equals reconait bien la différence de type et renvoie false*/
         int c4=1;
-        assertEquals(c2.equals(c4),false,'');
+        assertFalse(c2.equals(c4));
 
         /**On test si deux complexes ont un chiffre réel différent*/
         Complex c5 = new Complex(2,1);
-        assertEquals(c2.equals(c1),false,'test du réel');
+        assertEquals(c2.equals(c5),false);
 
         /**On test si deux complexes ont un chiffre imaginaire différent*/
         Complex c6 = new Complex(1,2);
-        assertEquals(c2.equals(c1),false,'test de l imaginaire');
+        assertEquals(c2.equals(c6),false);
     }
 }
