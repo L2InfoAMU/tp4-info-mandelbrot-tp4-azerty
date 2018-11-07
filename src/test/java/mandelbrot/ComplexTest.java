@@ -133,4 +133,28 @@ public class ComplexTest {
         Complex c2 = new Complex(real, imaginary);
         assertEquals(c1.hashCode(), c2.hashCode());
     }
+
+    @Test
+    void testEquals(){
+        /**On test si deux meme complexes sont bien égaux (c1=c2)*/
+        Complex c1 = new Complex(1,1);
+        Complex c2 = new Complex(1,1);
+        assertEquals(c2.equals(c1),true);
+
+        /**On test si equals nous retourne "false" si l'objet "o" dans c2.equals(o) est null*/
+        Complex c3= null;
+        assertEquals(c2.equals(c3),false,'');
+
+        /**On test si equals reconait bien la différence de type et renvoie false*/
+        int c4=1;
+        assertEquals(c2.equals(c4),false,'');
+
+        /**On test si deux complexes ont un chiffre réel différent*/
+        Complex c5 = new Complex(2,1);
+        assertEquals(c2.equals(c1),false,'test du réel');
+
+        /**On test si deux complexes ont un chiffre imaginaire différent*/
+        Complex c6 = new Complex(1,2);
+        assertEquals(c2.equals(c1),false,'test de l imaginaire');
+    }
 }
