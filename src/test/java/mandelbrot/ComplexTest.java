@@ -80,6 +80,7 @@ public class ComplexTest {
         assertThrows(ArithmeticException.class, ()->Complex.ZERO.reciprocal());
     }
 
+
     @Test
     void testSubstract(){
         assertEquals(minusOne, Complex.ZERO.subtract(Complex.ONE));
