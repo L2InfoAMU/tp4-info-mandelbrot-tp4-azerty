@@ -109,6 +109,7 @@ public class Complex {
      *
      * @param subtrahend the complex to be subtracted from <code>this</code>
      * @return the complex number <code>this - subtrahend</code>
+     *
      */
     Complex subtract(Complex subtrahend) {
         return new Complex( this.real - subtrahend.real,this.imaginary - subtrahend.imaginary);
