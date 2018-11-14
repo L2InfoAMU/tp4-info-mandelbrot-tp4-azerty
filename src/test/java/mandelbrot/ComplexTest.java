@@ -164,7 +164,9 @@ public class ComplexTest {
         assertEquals( c1.squaredModulus(),3 * 3 + 8 * 8);
     }
 
-   /* @Test
-    public (double real)*/
+
+    @Test
+    void test(){}
+
 
 }
