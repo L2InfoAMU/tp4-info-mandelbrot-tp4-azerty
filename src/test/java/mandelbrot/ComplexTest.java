@@ -155,5 +155,12 @@ public class ComplexTest {
         /**On test si deux complexes ont un chiffre imaginaire différent*/
         Complex c6 = new Complex(1,2);
         assertEquals(c2.equals(c6),false);
+
+        }
+
+    @Test
+    void testsquareModulus(){
+        Complex c1= new Complex( 3,8);
+        assertEquals( c1.squaredModulus(),3 * 3 + 8 * 8);
     }
 }
