@@ -173,7 +173,11 @@ public class ComplexTest {
     }
 
     @Test
-    void testComplexAdd(Complex addend){}
+    void testAdd(){
+        Complex c1= new Complex( 3,8);
+        Complex c2= new Complex( 6,16);
+        assertEquals(c1.add(c1), c2);
+    }
 
     @Test
     void testMultiply(Complex subtrahend){}
