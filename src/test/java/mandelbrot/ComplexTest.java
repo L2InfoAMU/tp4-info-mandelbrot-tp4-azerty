@@ -166,7 +166,27 @@ public class ComplexTest {
 
 
     @Test
-    void test(){}
+    void teststaticComplexReal(double real){}
 
+    @Test
+    void testComplexAdd(Complex addend){}
+
+    @Test
+    void testMultiply(Complex subtrahend){}
+
+    @Test
+    void testsubstract(Complex addend){}
+
+    @Test
+    void testModulus(){}
+
+    @Test
+    void testPow(int p){}
+
+    @Test
+    void testScale(double lambda){}
+
+    @Test
+    void testBooleanEquals(Object o){}
 
 }
