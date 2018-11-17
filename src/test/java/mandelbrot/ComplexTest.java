@@ -166,7 +166,11 @@ public class ComplexTest {
 
 
     @Test
-    void teststaticComplexReal(double real){}
+    void testStaticComplexReal(){
+        Complex c1= new Complex( 3,8);
+        Complex c2= new Complex( 3,0);
+        assertEquals(c1.real(c1.real), c2);
+    }
 
     @Test
     void testComplexAdd(Complex addend){}
