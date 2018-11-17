@@ -7,5 +7,5 @@ Le but du TP sera de corriger le code de la classe `Complex` en s'aidant de test
 
 ## Membres du projet
 
-- NOM, prénom, numéro de groupe, du premier participant
-- NOM, prénom, numéro de groupe, du deuxième participant
+- TINTORRI Floren , numéro de groupe : 2 
+- NOM, Prénom, numéro de groupe : 2, du deuxième participant

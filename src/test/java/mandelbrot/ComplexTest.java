@@ -200,7 +200,10 @@ public class ComplexTest {
 
 
     @Test
-    void testModulus(){}
+    void testModulus(){
+        Complex c1=new Complex(3,1);
+        assertNotEquals(c1.modulus(),10);
+    }
 
     @Test
     void testPow(int p){}

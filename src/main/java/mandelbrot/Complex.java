@@ -135,6 +135,7 @@ public class Complex {
      *
      * @return <code>||this|| ** 2</code>
      */
+    //module = sqrt( a²+ b² ) squareModulus= a²+b²
     double squaredModulus() {
         return this.real * this.real + this.imaginary * this.imaginary;
     }
