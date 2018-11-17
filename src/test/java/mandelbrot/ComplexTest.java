@@ -2,6 +2,7 @@ package mandelbrot;
 
 import org.junit.jupiter.api.Test;
 
+import static java.lang.Math.sqrt;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ComplexTest {
@@ -114,9 +115,9 @@ public class ComplexTest {
         assertEquals(Complex.I, Complex.rotation(Math.PI/2));
         assertEquals(minusI, Complex.rotation(-Math.PI/2));
         assertEquals(Complex.ONE, Complex.rotation(0));
-        assertEquals(new Complex(Math.sqrt(2)/2., Math.sqrt(2)/2.),
+        assertEquals(new Complex(sqrt(2)/2., sqrt(2)/2.),
                 Complex.rotation(Math.PI/4));
-        assertEquals(new Complex(1./2., Math.sqrt(3)/2.),
+        assertEquals(new Complex(1./2., sqrt(3)/2.),
                 Complex.rotation(Math.PI/3));
     }
 
@@ -202,11 +203,17 @@ public class ComplexTest {
     @Test
     void testModulus(){
         Complex c1=new Complex(3,1);
-        assertNotEquals(c1.modulus(),10);
+        assertEquals(c1.modulus(),sqrt(10));
     }
 
     @Test
-    void testPow(int p){}
+    void testPow(){
+        int p1 =3;
+        Complex c1=new Complex(2,3);
+        int p2 =0;
+        Complex c2=new Complex((8-3*18),(3*2*2*3-3*3*3));
+        assertEquals( c1.pow(p1), c2);
+    }
 
     @Test
     void testScale(double lambda){}
