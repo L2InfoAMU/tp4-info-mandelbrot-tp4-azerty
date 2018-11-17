@@ -176,7 +176,9 @@ public class ComplexTest {
     void testAdd(){
         Complex c1= new Complex( 3,8);
         Complex c2= new Complex( 6,16);
-        assertEquals(c1.add(c1), c2);
+        assertEquals(c1.add(c1),c2);
+        Complex c3= new Complex( 7,16);
+        assertNotEquals(c1.add(c1),c3);
     }
 
     @Test
