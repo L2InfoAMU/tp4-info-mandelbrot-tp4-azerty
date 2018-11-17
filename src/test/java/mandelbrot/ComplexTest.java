@@ -218,9 +218,9 @@ public class ComplexTest {
     }
 
     @Test
-    void testScale(double lambda){}
-
-    @Test
-    void testBooleanEquals(Object o){}
-
+    void testScale(double lambda){
+        Complex c1=new Complex(1,2);
+        Complex c2=new Complex(8,16);
+        assertEquals(c1.scale(8),c2);
+    }
 }
