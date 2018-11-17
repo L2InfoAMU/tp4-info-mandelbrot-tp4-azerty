@@ -213,6 +213,8 @@ public class ComplexTest {
         int p2 =0;
         Complex c2=new Complex((8-3*18),(3*2*2*3-3*3*3));
         assertEquals( c1.pow(p1), c2);
+        Complex c3=new Complex(0, 0);
+        assertEquals(c1.pow(p2), c3);
     }
 
     @Test
