@@ -187,11 +187,17 @@ public class ComplexTest {
         Complex c2= new Complex( 12,16);
         assertEquals(c1.multiply(c1),c2);
         assertNotEquals(c1.add(c1),c1);
-
     }
 
     @Test
-    void testsubstract(Complex addend){}
+    void testsubstract(){
+        Complex c1= new Complex( 3,8);
+        Complex c2= new Complex( 6,16);
+        assertEquals(c2.subtract(c1),c1);
+        Complex c3= new Complex( 7,16);
+        assertNotEquals(c2.add(c1),c2);
+    }
+
 
     @Test
     void testModulus(){}

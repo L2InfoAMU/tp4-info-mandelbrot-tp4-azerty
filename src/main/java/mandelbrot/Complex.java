@@ -112,6 +112,7 @@ public class Complex {
      *
      */
     Complex subtract(Complex subtrahend) {
+        //(a + i.b) – (a' + i.b')= a – a' + i (b – b')
         return new Complex( this.real - subtrahend.real,this.imaginary - subtrahend.imaginary);
     }
 
@@ -122,6 +123,7 @@ public class Complex {
      * @return the complex number {@code this * factor}
      */
     Complex multiply(Complex factor) {
+        // (a + i.b) x (a' + i.b') = (aa' – bb') + i (ab' + ba')
         return new Complex(
                 this.real * factor.real - this.imaginary * factor.imaginary,
                 this.real * factor.imaginary + this.imaginary * factor.real
